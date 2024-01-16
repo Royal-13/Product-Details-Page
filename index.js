@@ -10,7 +10,7 @@ function changeImage(newImageSrc) {
   mainImage.src = newImageSrc;
 
   var smallImage = document.getElementById("imageThumb");
-  for (var i = 0; i < smallImages.length; i++) {
+  for (var i = 0; i < smallImage.length; i++) {
     smallImage[i].style.opacity = "50%";
     smallImage[i].style.border = "2px solid #ff7d1a";
   }
