@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container">
+      <figure class="menuIcon">
+        <a id="menuIcon" onclick="onMenuClick()">
+          <img src="./images/icon-menu.svg" alt="menu" />
+        </a>
+      </figure>
+      <figure>
+        <a href="#">
+          <img src="./images/logo.svg" alt="sneaker company" />
+        </a>
+      </figure>
+   
+        <ul class="minContainer" id="minContainer">
+          <li class="lStyle"><a href="#">Collections</a></li>
+          <li class="lStyle"><a href="#">Men</a></li>
+          <li class="lStyle"><a href="#">Women</a></li>
+          <li class="lStyle"><a href="#">About</a></li>
+          <li class="lStyle"><a href="#">Contact</a></li>
+        </ul>
+
+      <figure>
+        <a href="">
+          <img src="./images/icon-cart.svg" alt="cart" />
+        </a>
+      </figure>
+      <figure>
+        <a href="">
+          <img class="fixImg" src="./images/image-avatar.png" alt="avatar" />
+        </a>
+      </figure>
+    </nav>
+    <div class="fixW">
+      <hr />
+    </div>
+
+    <section class="product">
+      <article class="productImage">
+        <figure class="imageCar">
+          <img id="mainImage" src="./images/image-product-1.jpg" alt="product-1" />
+        </figure>
+        <figure class="imageThumb">
+          <img id="imageThumb" src="./images/image-product-1-thumbnail.jpg" alt="product-1" onclick="changeImage('./images/image-product-1.jpg')" />
+          <img id="imageThumb" src="./images/image-product-2-thumbnail.jpg" alt="product-2" onclick="changeImage('./images/image-product-2.jpg')"/>
+          <img id="imageThumb" src="./images/image-product-3-thumbnail.jpg" alt="product-3" onclick="changeImage('./images/image-product-3.jpg')"/>
+          <img id="imageThumb" src="./images/image-product-4-thumbnail.jpg" alt="product-4" onclick="changeImage('./images/image-product-4.jpg')"/>
+        </figure>
+      </article>
+
+      <article class="productText">
+        <p class="companyText">SNEAKER COMPANY</p>
+        <h1 class="companyHeading">Fall Limited Edition<br />Sneakers</h1>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear
+          companion. Featuring a durable rubber outer sole, they’ll
+          withstand everything the weather can offer.
+        </p>
+
+        <article class="price">
+          <h2>$125.00</h2>
+          <p>50%</p>
+        </article>
+
+        <span class="oldPrice">$250.00</span>
+
+        <section class="btn">
+          <article class="count">
+            <figure class="fixMinus">
+              <img src="./images/icon-minus.svg" />
+            </figure>
+            <span>0</span>
+            <figure class="fixPlus">
+              <img src="./images/icon-plus.svg" />
+            </figure>
+          </article>
+          <button class="btnS">
+            <img src="./images/icon-cart1.svg" />Add to cart
+          </button>
+        </section>
+      </article>
+    </section>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="index.js"></script>
+  </body>
+</html>
